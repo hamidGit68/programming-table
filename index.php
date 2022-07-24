@@ -17,7 +17,10 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
 </head>
 
 <body>
-  <?php modalFunc("There are some errors in sending your request to database! Please try again later.") ?>
+  <?php modalFunc("myModal", "There are some errors in sending your request to database! Please try again later.") ?>
+  
+  <?php modalFunc("cleanModal", "There are some errors in sending your request to database! Please try again later.") ?>
+  
   <!-- bootstrap modal that comes when data record is not successful 
    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
       <div class="modal-dialog">

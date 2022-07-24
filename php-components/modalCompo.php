@@ -1,8 +1,8 @@
 <?php
 
 
-function modalFunc($modalMessage) { ?>
-   <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+function modalFunc($modalId, $modalMessage) { ?>
+   <div class="modal fade" id=<?php echo $modalId ?> tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
