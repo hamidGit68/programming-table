@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Telex;
+  src: url(../fonts/telex-regular.ttf);
+}
+
+@font-face {
+  font-family: Storia;
+  src: url(../fonts/storia-regular.otf);
+}
+
+@font-face {
+  font-family: Storia;
+  src: url(../fonts/storia-light.otf);
+  font-weight: 200;
+}
+
+
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Telex;
+}
+
+h1 {
+    font-family: Storia;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+td {
+    text-align: center;
+}
+
+th[scope="col"] {
+    font-family: Storia;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+th[scope="row"] {
+    font-family: Storia;
+    font-weight: 200;
+    text-align: center;
+}
+
+#inputTitle {
+    width: 75%;
+    font-family: Storia;
+    font-weight: 200;
+    font-size: 2rem;
+    opacity: 0;
+    -webkit-transition: 2s;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.modal-title {
+    font-family: Storia;
+    font-size: 2.5rem;
+}
