@@ -1,6 +1,7 @@
 <?php
 require "./php-files/selectData.php";
 require "./php-files/connection.php";
+require "./php-components/modalCompo.php";
 $allData = queryLoop("SELECT * FROM `work-data`", $con);
 ?><!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,8 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
 </head>
 
 <body>
-  <!-- bootstrap modal that comes when data record is not successful -->
+  <?php modalFunc("There are some errors in sending your request to database! Please try again later.") ?>
+  <!-- bootstrap modal that comes when data record is not successful 
    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -33,6 +35,7 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
         </div>
       </div>
     </div>
+    -->
     <!-- ************************************** -->
     
     <div class="container-fluid">
