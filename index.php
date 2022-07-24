@@ -35,7 +35,8 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
     </div>
     <!-- ************************************** -->
     
-    <div class="container-fluid">
+    <div class="container-fluid" id="back-img">
+       <div class="demo-content">
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h1 id="myTitle" class="text-center rounded-3 mt-5 mb-3 text-secondary bg-dark py-3"></h1>
@@ -223,6 +224,7 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
                     <button class="btn btn-dark">Save as pdf</button>
                 </div>
             </div>
+           </div>
         </div>
     </div>
 
