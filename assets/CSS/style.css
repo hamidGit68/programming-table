@@ -65,3 +65,26 @@ th[scope="row"] {
     font-family: Storia;
     font-size: 2.5rem;
 }
+
+#back-img {
+    position: relative;
+}
+
+#back-img:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url("../images/pattern-hd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.demo-content {
+  position: relative;
+}
