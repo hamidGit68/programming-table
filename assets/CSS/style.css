@@ -28,7 +28,8 @@ body {
 }
 
 h1 {
-    font-family: Storia;
+    /* Storia */
+    font-family: Telex;
     -webkit-transition: 2s;
     transition: 2s;
 }
