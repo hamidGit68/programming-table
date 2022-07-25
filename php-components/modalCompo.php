@@ -12,9 +12,17 @@ function modalFunc($modalId, $modalMessage) { ?>
           <div class="modal-body text-danger text-center">
             <?php echo $modalMessage ?>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
-          </div>
+          <?php if($modalId === "cleanModal") : ?>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">NO</button>
+                
+                <button type="button" class="btn btn-outline-primary mx-auto" onclick="cleanTable()">Yes</button>
+              </div>
+          <?php else : ?>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+              </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>

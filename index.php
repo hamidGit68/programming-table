@@ -19,7 +19,7 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
 <body>
   <?php modalFunc("myModal", "There are some errors in sending your request to database! Please try again later.") ?>
   
-  <?php modalFunc("cleanModal", "There are some errors in sending your request to database! Please try again later.") ?>
+  <?php modalFunc("cleanModal", "Are you sure that you want to delete all data in this table?") ?>
   
   <!-- bootstrap modal that comes when data record is not successful 
    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
@@ -225,7 +225,7 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
                 </table>
                 <div class="d-flex border justify-content-around mt-5 p-3">
                     <button class="btn btn-outline-primary" onclick="addData()">Add row</button>
-                    <button class="btn btn-warning" onclick="cleanTable()">Clean tabel</button>
+                    <button class="btn btn-warning" onclick="confirmClear()">Clean tabel</button>
                     <button class="btn btn-dark">Save as pdf</button>
                 </div>
             </div>

@@ -202,6 +202,11 @@ function addData() {
         });
 }
 
+function confirmClear() {
+    var myModal = new bootstrap.Modal(document.getElementById('cleanModal'));
+    myModal.show();
+}
+
 /* clean table */
 function cleanTable() {
     sendData('/php-files/deleteData.php')
