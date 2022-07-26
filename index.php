@@ -41,7 +41,7 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
     -->
     <!-- ************************************** -->
     
-    <div class="container-fluid">
+    <div class="container-fluid" id="mainContainer">
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h1 id="myTitle" class="text-center rounded-3 mt-5 mb-3 text-secondary bg-dark py-3"></h1>
@@ -226,7 +226,7 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
                 <div class="d-flex border justify-content-around mt-5 p-3">
                     <button class="btn btn-outline-primary" onclick="addData()">Add row</button>
                     <button class="btn btn-warning" onclick="confirmClear()">Clean tabel</button>
-                    <button class="btn btn-dark">Save as pdf</button>
+                    <button class="btn btn-dark" onclick="convertTableToPDF()">Save as pdf</button>
                 </div>
             </div>
         </div>
@@ -234,6 +234,9 @@ $allData = queryLoop("SELECT * FROM `work-data`", $con);
 
 
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/jspdf/dist/jspdf.umd.min.js"></script>
+    <script type="text/javascript"
+	src="./node_modules/html2canvas/dist/html2canvas.js"></script>
     <script src="assets/JS/codes.js"></script>
 </body>
 

@@ -223,3 +223,19 @@ function cleanTable() {
                 myModal.show();
         });
 }
+
+/* converting table to pdf */
+function convertTableToPDF() {
+	const { jsPDF } = window.jspdf;
+
+	var doc = new jsPDF("l", "px", [1536, 648], hotfixes = ["px_scaling"]);
+	var pdfjs = document.querySelector('#mainContainer');
+
+	doc.html(pdfjs, {
+		callback: function(doc) {
+			doc.save("output.pdf");
+		},
+		x: 10,
+		y: 10
+	});
+}
